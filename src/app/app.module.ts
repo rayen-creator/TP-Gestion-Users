@@ -2,10 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-
+import { HeaderComponent } from './header/header.component';
+import { ListProductComponent } from './list-product/list-product.component';
+import { FooterComponent } from './footer/footer.component';
+/*.In our AppModule, we then need to specify the component that will serve as the entry point component for our application.
+In our app.module.ts file where we import the entry component (conventionally AppComponent) and supply it as the only item
+in our bootstrap array inside the NgModule configuration object. eg. bootstrap[AppComponent]*/
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    ListProductComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
