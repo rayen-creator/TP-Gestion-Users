@@ -41,4 +41,10 @@ export class ListProductComponent implements OnInit {
       //cnx to  backend side
     }
   }
+  buyProduct(product:Product):void{
+    let i = this.list.indexOf(product);
+    if(i!=-1){
+      this.list[i].quantity--
+      //cnx to  backend side
+    }}
 }

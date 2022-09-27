@@ -17,6 +17,11 @@
           </svg>
           {{product.nbrLike}}like
         </button>
+        <button class="btn btn-sm btn-warning btn2"
+        [hidden]="product.quantity==0" (click)="buyProduct(product)">
+          buy
+        </button>
+        <span class="btn2" *ngIf="product.quantity==0">out of stock!</span>
       </div>
     </div>
   </div>
