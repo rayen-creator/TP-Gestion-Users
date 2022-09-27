@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { FooterComponent } from './footer/footer.component';
+import { UserListComponent } from './user-list/user-list.component';
 /*.In our AppModule, we then need to specify the component that will serve as the entry point component for our application.
 In our app.module.ts file where we import the entry component (conventionally AppComponent) and supply it as the only item
 in our bootstrap array inside the NgModule configuration object. eg. bootstrap[AppComponent]*/
@@ -13,7 +14,8 @@ in our bootstrap array inside the NgModule configuration object. eg. bootstrap[A
     AppComponent,
     HeaderComponent,
     ListProductComponent,
-    FooterComponent
+    FooterComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule
