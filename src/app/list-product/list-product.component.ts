@@ -34,5 +34,11 @@ export class ListProductComponent implements OnInit {
       }
     ]
   }
-
+  incerementLike(product:Product):void{
+    let i = this.list.indexOf(product);
+    if(i!=-1){
+      this.list[i].nbrLike++
+      //cnx to  backend side
+    }
+  }
 }
