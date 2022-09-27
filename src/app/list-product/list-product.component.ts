@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListProductComponent implements OnInit {
   public title: String;
+  //public list:
   constructor() {
   }
   ngOnInit(): void {

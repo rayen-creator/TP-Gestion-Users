@@ -6,6 +6,7 @@ The tsconfig.json file specifies the root files and the compiler options require
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strictPropertyInitialization": false,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -25,8 +26,7 @@ The tsconfig.json file specifies the root files and the compiler options require
     "lib": [
       "es2020",
       "dom"
-    ],
-    "strictPropertyInitialization": false
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
